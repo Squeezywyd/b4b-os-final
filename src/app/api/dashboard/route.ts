@@ -1,4 +1,6 @@
 import { NextResponse } from 'next/server';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
 import { supabase } from '@/lib/db';
 
 const EMPTY = {
@@ -7,6 +9,12 @@ const EMPTY = {
 };
 
 export async function GET() {
+  const session = await getServerSession(authOptions);
+  if (!session) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  if ((session.user as any)?.role === 'outreach') {
+    return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
+  }
+
   try {
     const [
       { count: totalLeads },

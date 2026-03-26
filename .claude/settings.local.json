@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /c/Users/Nael Ackle/Downloads/b4b-os-final-v3/b4b-os-supabase/src -type f \\\\\\(-name *.ts -o -name *.tsx -o -name *.sql \\\\\\))",
+      "Bash(find /c/Users/Nael Ackle/Downloads/b4b-os-final-v3/b4b-os-supabase -type f \\\\\\(-name *.sql -o -name *schema* -o -name *migration* \\\\\\))"
+    ]
+  }
+}
