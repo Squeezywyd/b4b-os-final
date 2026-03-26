@@ -1,0 +1,26 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+  .card { background:#111; border-radius:20px; border:1px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:50px 40px; gap:24px; }
+  .label { font-family:'Inter',sans-serif; font-size:11px; letter-spacing:5px; color:#444; text-transform:uppercase; }
+  .mark { display:flex; align-items:center; gap:10px; }
+  .cursor { width:4px; height:52px; background:linear-gradient(180deg,#CCFF00,#60CFFF); border-radius:2px; animation: blink 1.2s ease-in-out infinite; }
+  .mini-bricks { display:flex; flex-direction:column; gap:4px; }
+  .row { display:flex; gap:4px; }
+  .mb { width:40px; height:18px; border-radius:3px; background:linear-gradient(135deg,#CCFF00,#7DFFC0,#60CFFF); }
+  .mb.dim { opacity:0.4; }
+  .mb.half { width:22px; }
+  .wordmark { font-family:'Inter',sans-serif; font-size:13px; font-weight:900; color:#fff; letter-spacing:3px; }
+</style>
+<div class="card">
+  <div class="mark">
+    <div class="cursor"></div>
+    <div class="mini-bricks">
+      <div class="row"><div class="mb"></div><div class="mb dim"></div></div>
+      <div class="row"><div class="mb half dim"></div><div class="mb"></div></div>
+      <div class="row"><div class="mb dim"></div><div class="mb half"></div></div>
+    </div>
+  </div>
+  <div class="wordmark">BRICK4BRICK</div>
+</div>

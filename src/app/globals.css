@@ -113,3 +113,57 @@ label { font-size: 0.8rem; font-weight: 500; color: var(--text-secondary); displ
 .metric-huge { font-family: 'Syne', sans-serif; font-size: 2.5rem; font-weight: 800; letter-spacing: -0.03em; }
 
 .section-title { font-family: 'Syne', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); padding: 0 0.85rem; margin: 1rem 0 0.4rem; }
+
+/* ── B4B Logo cursor animation ─────────────────────────── */
+@keyframes b4b-blink { 0%,100%{opacity:1} 50%{opacity:0} }
+.b4b-cursor { width: 4px; height: 52px; background: linear-gradient(180deg, #CCFF00, #60CFFF); border-radius: 2px; animation: b4b-blink 1.2s ease-in-out infinite; flex-shrink: 0; }
+
+/* ── Responsive grid helpers ───────────────────────────── */
+.grid-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+.grid-pipeline { display: grid; grid-template-columns: 1fr 320px; gap: 1rem; margin-bottom: 1.5rem; }
+.grid-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.grid-5col { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.75rem; }
+
+/* ── Mobile hamburger & overlay ────────────────────────── */
+.mobile-menu-btn {
+  display: none;
+  position: fixed; top: 0.85rem; left: 0.85rem; z-index: 60;
+  background: var(--bg-2); border: 1px solid var(--border); border-radius: 8px;
+  color: var(--text-primary); cursor: pointer;
+  width: 36px; height: 36px;
+  align-items: center; justify-content: center;
+  font-size: 1.1rem; padding: 0; flex-shrink: 0;
+}
+.mobile-overlay {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.65); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px);
+  z-index: 45;
+}
+
+/* ── Responsive breakpoints ────────────────────────────── */
+@media (max-width: 768px) {
+  .mobile-menu-btn { display: flex; }
+  .mobile-overlay.open { display: block; }
+
+  .sidebar { left: -260px; transition: left 0.25s ease; box-shadow: none; }
+  .sidebar.mobile-open { left: 0; box-shadow: 8px 0 32px rgba(0,0,0,0.5); }
+
+  .main-content { margin-left: 0; padding: 3.75rem 1rem 1.5rem; }
+
+  .grid-stats { grid-template-columns: 1fr 1fr; }
+  .grid-pipeline { grid-template-columns: 1fr; }
+  .grid-2col { grid-template-columns: 1fr; }
+  .grid-5col { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .grid-stats { grid-template-columns: 1fr; }
+  .grid-5col { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  .grid-stats { grid-template-columns: repeat(2, 1fr); }
+  .grid-5col { grid-template-columns: repeat(3, 1fr); }
+  .grid-pipeline { grid-template-columns: 1fr; }
+}

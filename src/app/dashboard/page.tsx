@@ -51,7 +51,7 @@ export default function Dashboard() {
         </div>
 
         {/* Stats */}
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:'1rem', marginBottom:'1.5rem' }}>
+        <div className="grid-stats">
           {[
             { label:'Leads gesamt', value:stats.totalLeads||0, sub:`${stats.wonLeads||0} gewonnen`, color:'var(--accent)', icon:'◎' },
             { label:'Kunden', value:stats.totalCustomers||0, sub:'Aktive Kunden', color:'#22c55e', icon:'◈' },
@@ -70,7 +70,7 @@ export default function Dashboard() {
         </div>
 
         {/* Pipeline + Daily */}
-        <div style={{ display:'grid', gridTemplateColumns:'1fr 320px', gap:'1rem', marginBottom:'1.5rem' }}>
+        <div className="grid-pipeline">
           <div className="card" style={{ padding:'1.25rem' }}>
             <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:'1.25rem' }}>
               <h3 style={{ fontSize:'0.95rem' }}>Sales Pipeline</h3>
@@ -110,7 +110,7 @@ export default function Dashboard() {
         </div>
 
         {/* Recent tables */}
-        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'1rem' }}>
+        <div className="grid-2col">
           <div className="card">
             <div style={{ padding:'1rem 1.25rem', borderBottom:'1px solid var(--border)', display:'flex', justifyContent:'space-between', alignItems:'center' }}>
               <h3 style={{ fontSize:'0.9rem' }}>Neueste Leads</h3>
@@ -149,7 +149,7 @@ export default function Dashboard() {
 
         <div className="card" style={{ marginTop:'1rem', padding:'1.25rem' }}>
           <h3 style={{ fontSize:'0.9rem', marginBottom:'1rem' }}>Weekly Goals</h3>
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(5, 1fr)', gap:'0.75rem' }}>
+          <div className="grid-5col">
             {['50 neue Leads finden','30 Businesses kontaktieren','10 Sales Calls führen','3 neue Kunden gewinnen','1 Website Template verbessern'].map((g,i) => (
               <div key={i} style={{ display:'flex', alignItems:'flex-start', gap:'0.5rem', padding:'0.75rem', background:'var(--bg-3)', borderRadius:8, border:'1px solid var(--border)' }}>
                 <div style={{ width:16, height:16, borderRadius:4, border:'2px solid var(--border-2)', flexShrink:0, marginTop:1 }} />

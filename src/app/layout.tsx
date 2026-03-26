@@ -1,10 +1,15 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import { Providers } from './providers';
 
 export const metadata: Metadata = {
   title: 'Brick4Brick OS — Business Operating System',
   description: 'Internal business operating system for Brick4Brick',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

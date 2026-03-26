@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
+import B4BLogo from '@/components/B4BLogo';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
@@ -27,9 +28,9 @@ export default function LoginPage() {
     }}>
       <div style={{ width: '100%', maxWidth: 380, padding: '0 1rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
-          <div style={{ width: 52, height: 52, background: 'linear-gradient(135deg, var(--accent), #a855f7)', borderRadius: 14, margin: '0 auto 1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem', fontWeight: 800, color: 'white', fontFamily: 'Syne, sans-serif', boxShadow: '0 0 40px rgba(108,99,255,0.3)' }}>B4</div>
-          <h1 style={{ fontSize: '1.6rem', marginBottom: '0.3rem' }}>Brick4Brick OS</h1>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>Business Operating System</p>
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1.5rem' }}>
+            <B4BLogo variant="full" />
+          </div>
         </div>
         <form onSubmit={handleSubmit} style={{ background: 'var(--bg-2)', border: '1px solid var(--border)', borderRadius: 16, padding: '2rem' }}>
           <div style={{ marginBottom: '1.25rem' }}>
