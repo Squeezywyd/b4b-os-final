@@ -46,9 +46,6 @@ export default function LoginPage() {
             {loading ? 'Wird eingeloggt…' : 'Anmelden'}
           </button>
         </form>
-        <p style={{ textAlign: 'center', marginTop: '1.5rem', color: 'var(--text-muted)', fontSize: '0.8rem' }}>
-          Kein Konto? <a href="/setup" style={{ color: 'var(--accent-2)', textDecoration: 'none' }}>Setup durchführen →</a>
-        </p>
       </div>
     </div>
   );
