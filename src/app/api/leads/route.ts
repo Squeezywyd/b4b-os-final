@@ -12,7 +12,7 @@ export async function GET(req: Request) {
     const { data, error } = await query;
     if (error) throw error;
     return NextResponse.json(data || []);
-  } catch (e: any) { return NextResponse.json([], { status: 200 }); }
+  } catch { return NextResponse.json([], { status: 200 }); }
 }
 
 export async function POST(req: Request) {

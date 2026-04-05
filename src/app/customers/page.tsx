@@ -64,12 +64,11 @@ export default function CustomersPage() {
   const [modal, setModal] = useState<any>(null);
 
   const load = useCallback(async () => {
-    setLoading(true);
     const res = await fetch('/api/customers');
     setCustomers(await res.json());
     setLoading(false);
   }, []);
-  useEffect(()=>{ load(); },[load]);
+  useEffect(() => { setLoading(true); void load(); }, [load]);
 
   async function saveCustomer(data: any) {
     if (data.id) await fetch(`/api/customers/${data.id}`, { method:'PATCH', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data) });

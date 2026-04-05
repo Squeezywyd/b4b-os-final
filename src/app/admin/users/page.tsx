@@ -39,13 +39,12 @@ export default function AdminUsersPage() {
   }, [role, router]);
 
   async function loadUsers() {
-    setLoading(true);
     const res = await fetch('/api/users');
     if (res.ok) setUsers(await res.json());
     setLoading(false);
   }
 
-  useEffect(() => { loadUsers(); }, []);
+  useEffect(() => { setLoading(true); void loadUsers(); }, []);
 
   async function handleCreate(e: React.FormEvent) {
     e.preventDefault();

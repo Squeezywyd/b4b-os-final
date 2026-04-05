@@ -55,20 +55,19 @@ export default function ProjectsPage() {
   const [modal, setModal] = useState<any>(null);
 
   const load = useCallback(async () => {
-    setLoading(true);
     const [p, c] = await Promise.all([fetch('/api/projects').then(r=>r.json()), fetch('/api/customers').then(r=>r.json())]);
     setProjects(p); setCustomers(c); setLoading(false);
   }, []);
-  useEffect(()=>{ load(); },[load]);
+  useEffect(() => { setLoading(true); void load(); }, [load]);
 
   async function saveProject(data: any) {
     if (data.id) await fetch(`/api/projects/${data.id}`, { method:'PATCH', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data) });
     else await fetch('/api/projects', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data) });
     setModal(null); load();
   }
-  async function deleteProject(id: string) {
+  async function _deleteProject(id: string) {
     if (!confirm('Projekt löschen?')) return;
-    await fetch(`/api/projects/${id}`, { method:'DELETE' }); load();
+    await fetch(`/api/projects/${id}`, { method: 'DELETE' }); void load();
   }
 
   const grouped: Record<string,any[]> = {};
