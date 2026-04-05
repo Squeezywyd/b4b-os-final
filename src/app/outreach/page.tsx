@@ -13,13 +13,13 @@ wir sind ein kleines Team, das lokalen Unternehmen dabei hilft, modern und profe
 
 Uns ist aufgefallen, dass [Firmenname] aktuell noch keine eigene Website hat. Das bedeutet leider, dass viele potenzielle Kunden, die online nach [Branche] in [Stadt] suchen, Sie schlicht nicht finden können – und stattdessen zur Konkurrenz gehen.
 
-Wir würden Ihnen gerne zeigen, wie eine moderne Website für Ihr Unternehmen aussehen könnte – schnell, unkompliziert und ohne Risiko.
+Wir würden Ihnen gerne zeigen, wie eine moderne Website für Ihr Unternehmen aussehen könnte – schnell, unkompliziert und ohne Risiko. Einen Einblick in unsere bisherigen Projekte finden Sie unter www.brick4brick.ch.
 
 Hätten Sie diese Woche kurz Zeit für ein 10–15-minütiges Gespräch?
 
 Freundliche Grüsse
 [Name 1] & [Name 2]
-brick4brick.ch | hallo@brick4brick.ch`
+www.brick4brick.ch | hallo@brick4brick.ch`
     },
     {
       name: 'Persönlich & Neugierig machend',
@@ -36,7 +36,7 @@ Wann passt ein kurzes Gespräch von 10–15 Minuten?
 
 Freundliche Grüsse
 [Name 1] & [Name 2]
-brick4brick.ch`
+www.brick4brick.ch | hallo@brick4brick.ch`
     },
     {
       name: 'Kurz & Direkt (Massenversand)',
@@ -51,7 +51,7 @@ Darf ich sie kurz zeigen?
 
 Freundliche Grüsse
 [Name 1] & [Name 2]
-brick4brick.ch`
+www.brick4brick.ch | hallo@brick4brick.ch`
     },
   ],
   email_bad_website: [
@@ -64,13 +64,13 @@ wir sind ein Team, das lokale Unternehmen dabei unterstützt, ihren Online-Auftr
 
 Wir haben uns die aktuelle Website von [Firmenname] angesehen und sind überzeugt, dass Sie damit Potenzial verschenken. Eine veraltete Website hinterlässt bei Besuchern oft einen falschen Eindruck – und kostet Sie täglich mögliche Kunden.
 
-Wir würden Ihnen gerne zeigen, wie ein moderner Webauftritt für Ihr Unternehmen aussehen könnte – mit klarer Struktur, besserem Google-Ranking und einem professionellen ersten Eindruck.
+Wir würden Ihnen gerne zeigen, wie ein moderner Webauftritt für Ihr Unternehmen aussehen könnte – mit klarer Struktur, besserem Google-Ranking und einem professionellen ersten Eindruck. Beispiele unserer Arbeit finden Sie auf www.brick4brick.ch.
 
 Hätten Sie diese Woche kurz Zeit für ein 10–15-minütiges Gespräch?
 
 Freundliche Grüsse
 [Name 1] & [Name 2]
-brick4brick.ch`
+www.brick4brick.ch | hallo@brick4brick.ch`
     },
     {
       name: 'Persönlich & Wertschätzend',
@@ -87,23 +87,23 @@ Wann hätten Sie kurz Zeit?
 
 Freundliche Grüsse
 [Name 1] & [Name 2]
-brick4brick.ch`
+www.brick4brick.ch | hallo@brick4brick.ch`
     },
   ],
   instagram: [
     {
       name: 'Keine Website',
-      body: `Hallo [Name], uns ist aufgefallen, dass [Firmenname] noch keine eigene Website hat. Wir helfen lokalen Unternehmen, modern online sichtbar zu werden. Dürfen wir kurz zeigen, wie das für euch aussehen könnte? 🚀`
+      body: `Hallo [Name], uns ist aufgefallen, dass [Firmenname] noch keine eigene Website hat. Wir helfen lokalen Unternehmen, modern online sichtbar zu werden – schau gerne mal auf www.brick4brick.ch vorbei. Dürfen wir kurz zeigen, wie das für euch aussehen könnte? 🚀`
     },
     {
       name: 'Veraltete Website',
-      body: `Hallo [Name], wir haben uns die Website von [Firmenname] angesehen und haben eine Idee, wie man den Auftritt deutlich moderner und wirkungsvoller gestalten könnte. Dürfen wir kurz zeigen, was wir uns vorstellen? 💡`
+      body: `Hallo [Name], wir haben uns die Website von [Firmenname] angesehen und haben eine Idee, wie man den Auftritt deutlich moderner und wirkungsvoller gestalten könnte. Auf www.brick4brick.ch siehst du, was wir machen – dürfen wir kurz zeigen, was wir uns vorstellen? 💡`
     },
   ],
   cold_call: [
     {
       name: 'Version A – Keine Website',
-      body: `Guten Tag, mein Name ist [Name], wir sind ein kleines Team, das lokalen Unternehmen dabei hilft, online besser gefunden zu werden.
+      body: `Guten Tag, mein Name ist [Name], wir sind ein kleines Team, das lokalen Unternehmen dabei hilft, online besser gefunden zu werden – Sie finden uns unter www.brick4brick.ch.
 
 Uns ist aufgefallen, dass [Firmenname] aktuell noch keine eigene Website hat.
 
@@ -113,11 +113,12 @@ Darf ich kurz fragen, ob Sie das aktuell planen?
 FOLLOW-UPS:
 • Wenn JA: Super – darf ich 2–3 kurze Fragen stellen, damit wir einschätzen können, was sinnvoll wäre?
 • Wenn NEIN: Verstehe – darf ich kurz erklären, warum viele lokale Unternehmen gerade jetzt davon profitieren?
+• BEI SKEPSIS: Kein Problem – schauen Sie sich gerne zuerst unsere Referenzen auf www.brick4brick.ch an.
 • ABSCHLUSS: Wäre ein kurzer 10–15-Minuten-Call diese Woche möglich?`
     },
     {
       name: 'Version B – Veraltete Website',
-      body: `Guten Tag, mein Name ist [Name], wir sind ein kleines Team, das lokalen Unternehmen hilft, ihren Online-Auftritt zu modernisieren.
+      body: `Guten Tag, mein Name ist [Name], wir sind ein kleines Team, das lokalen Unternehmen hilft, ihren Online-Auftritt zu modernisieren – mehr dazu unter www.brick4brick.ch.
 
 Wir haben uns die Website von [Firmenname] kurz angesehen und glauben, dass da noch deutlich mehr Potenzial drin steckt.
 
@@ -126,6 +127,7 @@ Hätten Sie kurz 2 Minuten?
 ──────────
 FOLLOW-UPS:
 • Wenn JA: Wir haben bereits eine erste Idee, wie ein moderner Auftritt für Ihr Unternehmen aussehen könnte – dürfen wir das kurz zeigen?
+• BEI SKEPSIS: Kein Problem – werfen Sie gerne einen Blick auf unsere bisherigen Projekte unter www.brick4brick.ch.
 • ABSCHLUSS: Wäre ein kurzer Call diese Woche möglich?`
     },
   ],
