@@ -14,7 +14,8 @@
       "Bash(npx tsc:*)",
       "Bash(npx next:*)",
       "Bash(npx eslint:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(find \"/c/Users/Nael Ackle/Downloads/b4b-os-final-v3/b4b-os-supabase\" -name \".gitignore\" -exec cat {} \\\\;)"
     ]
   }
 }
